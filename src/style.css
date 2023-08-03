@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: lightslategray;
+  color: white;
+  padding: 30px;
+}
+
+.image {
+  height: 500px;
+}
