@@ -5,13 +5,45 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   background-color: lightslategray;
+  font-family: 'Courier New', Courier, monospace;
   color: white;
-  padding: 30px;
+  padding: 30px 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .image {
   height: 500px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.plates {
+  height: 300px;
+  object-fit: contain;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.aboutUs {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.house {
+  height: 500px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }

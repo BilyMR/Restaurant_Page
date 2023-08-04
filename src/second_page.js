@@ -5,10 +5,11 @@ import sandwich from "./sandwich.jpg"
 
 export default function () {
   const content = document.createElement("div")
+  content.classList.add("container")
 
   const myPollo = new Image();
   myPollo.src = pollo;
-  myPollo.classList.add("image")
+  myPollo.classList.add("plates")
   content.appendChild(myPollo)
 
   let parra1 = document.createElement("div")
@@ -17,7 +18,7 @@ export default function () {
 
   const myAlbondiga = new Image();
   myAlbondiga.src = albondiga;
-  myAlbondiga.classList.add("image")
+  myAlbondiga.classList.add("plates")
   content.appendChild(myAlbondiga)
 
   let parra2 = document.createElement("div")
@@ -26,7 +27,7 @@ export default function () {
 
   const myPlato = new Image();
   myPlato.src = plato;
-  myPlato.classList.add("image")
+  myPlato.classList.add("plates")
   content.appendChild(myPlato)
 
   let parra3 = document.createElement("div")
@@ -35,7 +36,7 @@ export default function () {
 
   const mySandwich = new Image();
   mySandwich.src = sandwich;
-  mySandwich.classList.add("image")
+  mySandwich.classList.add("plates")
   content.appendChild(mySandwich)
 
   let parra4 = document.createElement("div")

@@ -1,6 +1,7 @@
 import image from "./image.jpg";
 export default function () {
   const subCont = document.createElement("div")
+  subCont.classList.add("container")
   const header = document.createElement("h1");
   header.textContent = "Generic Restaurant Page";
 
