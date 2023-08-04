@@ -1,20 +1,36 @@
 import "./style.css";
 import paginaUno from "./first_page.js";
 import paginaDos from "./second_page.js"
-import paginaTres from "./third_page"
+import paginaTres from "./third_page";
+import { frontButton, menuButton, aboutButton } from "./buttons";
 
 function elements() {
   const content = document.createElement("div");
+  content.classList.add("content")
 
-  /*const pageOne = paginaUno()
-  content.appendChild(pageOne)
-  */
-  /*
-   const pageTwo = paginaDos()
-   content.appendChild(pageTwo)
-   */
+  const pageOne = paginaUno()
+  const pageTwo = paginaDos()
   const pageThree = paginaTres()
-  content.appendChild(pageThree)
+
+  frontButton.addEventListener("click", () => {
+    content.innerHTML = ""
+    content.appendChild(pageOne)
+  })
+
+  menuButton.addEventListener("click", () => {
+    content.innerHTML = ""
+    content.appendChild(pageTwo)
+  })
+
+  aboutButton.addEventListener("click", () => {
+    content.innerHTML = ""
+    content.appendChild(pageThree)
+  })
+
+  content.appendChild(frontButton)
+  content.appendChild(menuButton)
+  content.appendChild(aboutButton)
+
   return content
 }
 

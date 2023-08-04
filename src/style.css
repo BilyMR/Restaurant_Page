@@ -5,10 +5,14 @@
 }
 
 body {
-  background-color: lightslategray;
+  background-color: rgb(255, 255, 255);
   font-family: 'Courier New', Courier, monospace;
-  color: white;
   padding: 30px 100px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
 }
 
 .container {
@@ -34,16 +38,29 @@ h1 {
   margin-bottom: 15px;
 }
 
-.aboutUs {
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .house {
   height: 500px;
   object-fit: contain;
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+.buttons {
+  border: none;
+  border-radius: 25px;
+  background-color: #00d0ff;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+  padding: 20px 50px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.buttons:hover {
+  opacity: 0.5;
+}
+
+.buttons:active {
+  opacity: 0.2;
 }

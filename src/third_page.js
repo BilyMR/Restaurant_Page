@@ -5,7 +5,6 @@ export default function () {
   content.classList.add("container")
 
   const aboutUsSegment = document.createElement("div")
-  aboutUsSegment.classList.add("aboutUs")
   content.appendChild(aboutUsSegment)
 
 
