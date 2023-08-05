@@ -8,28 +8,32 @@ function elements() {
   const content = document.createElement("div");
   content.classList.add("content")
 
+  const container = document.createElement("div")
+  container.classList.add("Container")
+
   const pageOne = paginaUno()
   const pageTwo = paginaDos()
   const pageThree = paginaTres()
 
   frontButton.addEventListener("click", () => {
-    content.innerHTML = ""
-    content.appendChild(pageOne)
+    container.innerHTML = ""
+    container.appendChild(pageOne)
   })
 
   menuButton.addEventListener("click", () => {
-    content.innerHTML = ""
-    content.appendChild(pageTwo)
+    container.innerHTML = ""
+    container.appendChild(pageTwo)
   })
 
   aboutButton.addEventListener("click", () => {
-    content.innerHTML = ""
-    content.appendChild(pageThree)
+    container.innerHTML = ""
+    container.appendChild(pageThree)
   })
 
   content.appendChild(frontButton)
   content.appendChild(menuButton)
   content.appendChild(aboutButton)
+  content.appendChild(container)
 
   return content
 }

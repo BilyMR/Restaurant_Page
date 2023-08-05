@@ -13,6 +13,7 @@ body {
 .content {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
 }
 
 .container {
@@ -54,6 +55,7 @@ h1 {
   font-size: 22px;
   padding: 20px 50px;
   cursor: pointer;
+  margin: 5px;
   transition: opacity 0.15s;
 }
 
